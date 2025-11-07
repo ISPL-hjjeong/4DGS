@@ -28,7 +28,8 @@
 │ 1단계: Feature 추출                                          │
 │                                                             │
 │ 초기 Gaussian의 위치(x, y, z)와 시간(t)를 사용하여         │
-│ HexPlane에서 feature를 추출                                 │
+│ HexPlane에서 feature를 추출                                 |
+| (bilinear interpolation을 통해 각 gaussian에 feature 부여)  │
 │                                                             │
 │ grid_feature = HexPlaneField.forward(pts, timestamps)       │
 │ → [N, 128] (다중해상도 feature)                            │
